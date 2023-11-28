@@ -8,8 +8,8 @@ from typing import List
 
 app = FastAPI()
 
-df_userdata = pd.read_parquet('DataBases\items_final.parquet')
-df_games = pd.read_parquet('DataBases\games.parquet')
+df_userdata = pd.read_parquet('DataBases/items_final.parquet')
+df_games = pd.read_parquet('DataBases/games.parquet')
 df_reviews = pd.read_parquet('DataBases/reviews_final.parquet')
 
 @app.get('/PlayTimeGenre/{genero}')
